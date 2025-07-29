@@ -7,19 +7,10 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>APIs - Application Programming Interface</h1>
-  </header>
   
-  <nav>
-    <ul>
-      <li><a href="/">Início</a></li>
-      <li><a href="/sobre-api">APIs</a></li>
-      <li><a href="/banco-de-dados">Banco de Dados</a></li>
-      <li><a href="/autenticacao">Autenticação</a></li>
-      <li><a href="/servidor">Servidor</a></li>
-    </ul>
-  </nav>
+  <%- include("../partials/header") %>
+  
+  <%- include("../partials/nav") %>
 
   <main>
     <h2>O que são APIs?</h2>
@@ -27,8 +18,7 @@
     <p>Por exemplo, uma API de clima pode permitir que um aplicativo obtenha informações sobre o tempo em tempo real de um servidor externo.</p>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Conceitos de Programação Back-End. Todos os direitos reservados.</p>
-  </footer>
+  <%- include("../partials/footer") %>
+  
 </body>
 </html>
