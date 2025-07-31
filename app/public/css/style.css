@@ -1,6 +1,7 @@
 :root {
   --cor-fundo-pagina: #f8f9fa; /* Cor de fundo suave (cinza claro) */
-  --cor-cabecalho: #000; /* Azul padrão (cor primária do Bootstrap) */
+  --cor-header:#white; 
+  --cor-footer: #505050; /* Azul padrão (cor primária do Bootstrap) */
   --cor-navegacao: #000; /* Cinza suave para a navegação */
   --cor-botoes: #0005; /* Verde de sucesso */
   --cor-botoes-hover: #8b712b; /* Verde mais escuro para hover */
@@ -31,7 +32,7 @@ li{
   }
   
   header {
-    background-color: var(--cor-cabecalho);
+    background-color: var(--cor-header);
     color: white;
     text-align: center;
     padding: 1rem;  
@@ -75,7 +76,7 @@ li{
   }
   
   footer {
-    background-color: var(--cor-cabecalho);
+    background-color: var(--cor-footer);
     color: white;
     text-align: center;
     padding: 10px;
@@ -105,4 +106,7 @@ li{
   li img {
     decoration: none;
     height: 25px;
+  }
+  hr{
+    background-color: #8f8329;
   }
