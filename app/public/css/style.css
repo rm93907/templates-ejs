@@ -10,6 +10,10 @@
   
   }
   
+li{
+  list-style-type: none;
+}
+
   * {
     margin: 0;
     padding: 0;
@@ -91,4 +95,13 @@
   footer p{
     color: var(--cor-fundo-pagina);
   }
+
+  footer br{
+    font-size:10px;
+    color: var(--cor-fundo-pagina);
+  }
   
+  li img {
+    decoration: none;
+    height: 25px;
+  }
