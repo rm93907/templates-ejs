@@ -8,7 +8,8 @@
   --cor-titulo: #cfa93f; /* Cor escura para os títulos */
   --cor-texto: #cfa93f; /* Cor do texto principal */
   --cor-texto-secundario: #6c757d; /* Cor suave para texto secundário */
-  
+  --cor-hr: #8f8329;
+
   }
   
 li{
@@ -107,6 +108,6 @@ li{
     decoration: none;
     height: 25px;
   }
-  hr{
-    background-color: #8f8329;
+  .hr{
+    background-color: var(--cor-hr);
   }
