@@ -123,11 +123,15 @@ li{
     color: #000;
   }
 
- img.logo{
-    margin-left: -1500px
+ ul img.logo{
+  position: left;
+    margin-left: -1000px
   }
   
-  header ul{
-    display: inline;
-  }
+ul img.carrinho img.perfil{
+  position: ;
+}
 
+  header ul{
+    display: inline-block;
+  }
