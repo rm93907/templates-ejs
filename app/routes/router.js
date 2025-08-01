@@ -5,19 +5,21 @@ var router = express.Router();
 router.get("/", function (req, res) {
     res.render("pages/Home")
 });
-router.get("/sobre-api", function (req, res) {
-    res.render("pages/sobre-api")
+router.get("/MVendidos", function (req, res) {
+    res.render("pages/MaisVendidos")
 });
-router.get("/banco-de-dados", function (req, res) {
-    res.render("pages/banco-de-dados")
+router.get("/plantas", function (req, res) {
+    res.render("pages/Plantas")
 });
-router.get("/autenticacao", function (req, res) {
-    res.render("pages/autenticacao")
+router.get("/vasos", function (req, res) {
+    res.render("pages/Vasos")
 });
-router.get("/servidor", function (req, res) {
-    res.render("pages/servidor")
+router.get("/promocoes", function (req, res) {
+    res.render("pages/Promocoes")
 });
-
+router.get("/presentear", function (req, res) {
+    res.render("pages/Presentear")
+});
 
 
 
