@@ -15,5 +15,5 @@ app.use("/", rotas);
 
 
 app.listen(port, () => {
-  console.log(`Servidor ouvindo na porta ${port}\nhttp://localhost:${port}`);
+  console.log(`Servidor aberto na porta ${port}\nhttp://localhost:${port}`);
 });
