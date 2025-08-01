@@ -123,6 +123,11 @@ li{
     color: #000;
   }
 
-  ul ,.logo ,img{
-    padding-left: -200px
+ img.logo{
+    margin-left: -1500px
   }
+  
+  header ul{
+    display: inline;
+  }
+
