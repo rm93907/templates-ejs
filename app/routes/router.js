@@ -20,7 +20,12 @@ router.get("/promocoes", function (req, res) {
 router.get("/presentear", function (req, res) {
     res.render("pages/Presentear")
 });
-
+router.get("/detalhes", function (req, res) {
+    res.render("pages/Detalhes")
+});
+router.get("/login", function (req, res) {
+    res.render("pages/Login")
+});
 
 
 module.exports = router;
