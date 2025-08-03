@@ -26,6 +26,8 @@ li{
     font-family: Arial, sans-serif;
     line-height: 1.6;
   margin: 0;
+  padding: 0;
+  background: #fff;
   
     display: flex;
     flex-direction: column;
@@ -33,10 +35,14 @@ li{
   }
   
   header {
-    background-color: var(--cor-header);
-    color: white;
-    text-align: center;
-    padding: 1rem;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
   }
   
   section ul {
@@ -97,7 +103,6 @@ li{
   }
   
   li img {
-    decoration: none;
     margin: 3px;
     height: 25px;
   }
@@ -113,19 +118,87 @@ li{
     color: #000;
   }
 
- ul img.logo{
-  position: left;
-    margin-left: -1500px
-  }
-  
-ul img.carrinho{
-  margin-right: -1400px;
-}
-
-ul img.perfil{
-  margin-right: -1200px;
-}
-
   header ul{
     display: inline-block;
   }
+
+.centralizar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cards-container {
+  display: flex;
+  gap: 30px; 
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 180px;
+  height: 260px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+li{
+position: inline-block;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.busca {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.barra {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background-color: #000;
+  color: white;
+}
+
+.icones {
+  display: flex;
+  gap:50px;
+  align-items: center;
+}
+
+.icones img {
+  height: 80px;
+  cursor: pointer;
+}
