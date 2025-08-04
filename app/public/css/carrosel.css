@@ -1,14 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
   .carrossel {
     position: relative;
-    padding: 0px 920px 0 941px;
-    width: 200px;
-    height: 250px;
+    padding: 0px 955px 0 955px;
+    width: 600px;
+    height: 300px;
     overflow: hidden;
     margin: auto;
   }
