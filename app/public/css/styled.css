@@ -1,0 +1,138 @@
+:root {
+  --dourado: #cfa93f;
+  --verde: #2d5130;
+  --cinza: #505050;
+  --preto: #000;
+  --branco: #fff;
+}
+
+.icones img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Detalhes do Produto  */
+
+.container-detalhes {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.miniaturas img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.imagem-principal img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.info {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.preco {
+  font-weight: bold;
+}
+
+.preco-antigo {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.preco-novo {
+  color: var(--dourado);
+  font-size: 1.2rem;
+}
+
+.avaliacao {
+  font-size: 20px;
+  color: gold;
+}
+
+.cores {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.btn-add {
+  background-color: var(--verde);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.frete {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.frete input {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-calcular {
+  background: var(--dourado);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/*  Descrição  */
+
+.descricao {
+  padding: 20px 40px;
+}
+
+.descricao h2 {
+  border-bottom: 2px solid var(--verde);
+  padding-bottom: 5px;
+  color: var(--verde);
+}
+
+/*  Comentários  */
+
+.comentarios {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.sem-comentario {
+  font-style: italic;
+  color: gray;
+}
