@@ -1,0 +1,46 @@
+.pagamento-container {
+  padding: 40px;
+  text-align: center;
+}
+
+.metodos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.metodo {
+  background: #2e2e2e;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.metodo:hover {
+  background: #444;
+}
+
+.metodo img {
+  width: 40px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.pagamento-container button {
+  margin-top: 30px;
+  background: #2d5130;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
