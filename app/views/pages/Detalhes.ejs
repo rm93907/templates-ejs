@@ -75,4 +75,73 @@
             <%- include("../partials/footer") %>
 </body>
 
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Produto</title>
+  <link rel="stylesheet" href="css/styled.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <%- include("../partials/nav") %>
+    <%- include("../partials/header") %>
+
+  <main class="container-detalhes">
+
+    <section class="galeria">
+      <div class="miniaturas">
+        <img src="imagens/Muda.png"/>
+        <img src="imagens/Muda.png"/>
+        <img src="imagens/Muda.png"/>
+      </div>
+      <div class="imagem-principal">
+        <img src="imagens/Muda.png"  />
+      </div>
+    </section>
+
+    <section class="info">
+      <h1>Muda de Comigo Ninguém Pode</h1>
+      <p class="preco">
+        <span class="preco-antigo">R$2.535,50</span>
+        <span class="preco-novo">em até 12x R$211,25</span>
+      </p>
+      <div class="avaliacao">★★★★★</div>
+
+      <div class="cores">
+        <p>Cor:</p>
+        <span class="cor" style="background:#4a3f35;"></span>
+        <span class="cor" style="background:#fff;"></span>
+        <span class="cor" style="background:#000;"></span>
+      </div>
+
+      <button class="btn-add">Adicionar ao carrinho</button>
+
+      <div class="frete">
+        <label for="cep">Simule seu frete:</label>
+        <input type="text" id="cep" placeholder="CEP" />
+        <button class="btn-calcular">Calcular</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="descricao">
+    <h2>Descrição</h2>
+    <p>
+      Dieffenbachia seguine, conhecida pelos nomes comuns de comigo-ninguém-pode[2] e aningapara[2], é uma planta da família das Araceae muito apreciada como ornamental de interiores, dada a sua tolerância à baixa luminosidade ambiente e baixa umidade relativa do ar. Produz grandes folhas variegadas, com vários tons de verde e amarelo, lustrosas e duradouras, o que o torna muito interessante em decoração de interiores. Em algumas regiões do mundo, a sua popularidade como planta doméstica é acrescida devido à fama que a planta leva de "espantar o mau-olhado e maus-espíritos".
+    </p>
+  </section>
+
+  <section class="comentarios">
+    <h3>Comentários</h3>
+    <p class="sem-comentario">Sem Comentários</p>
+  </section>
+
+  <footer>
+    <p>© 2024 – Todos os direitos reservados por Florlo</p>
+  </footer>
+<%- include("../partials/footer") %>
+</body>
 </html>

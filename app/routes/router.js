@@ -37,6 +37,4 @@ router.get("/pagamento", function (req, res) {
     res.render("pages/Pagamento")
 });
 
-
-
 module.exports = router;
