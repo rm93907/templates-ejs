@@ -1,0 +1,34 @@
+.carrinho-container {
+  padding: 40px; text-align: center;
+}
+.itens {
+  display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
+}
+.item {
+  position: relative;
+  width: 150px; height: 150px;
+  background: #fff; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.item img { width: 100%; height: auto; border-radius: 6px;}
+.remover {
+  position: absolute; top: 5px; right: 5px;
+  background: red; color: #fff; border: none; border-radius: 50%;
+  width: 24px; height: 24px; cursor: pointer;
+}
+.resumo {
+  margin-top: 20px;
+}
+.resumo button {
+  background: #2d5130; color: #fff;
+  border: none; padding: 12px 24px; border-radius: 6px;
+  font-size: 1rem; cursor: pointer;
+}
+.borda{
+    display: flex;
+    height: 10px;
+    width: 50%;
+    margin-left: 360px;
+    background: black;
+}

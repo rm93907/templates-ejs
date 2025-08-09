@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="css/carrinho.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <%- include("../partials/nav") %>
+    <%- include("../partials/header") %>
+
+      <main class="carrinho-container">
+        <h2>Carrinho</h2>
+        <section class="itens">
+          <section class="item">
+            <img src="imagens/logoflor.png">
+            <button class="remover">×</button>
+          </section>
+
+          <!-- repetir outros items -->
+
+          <section class="item">
+            <img src="imagens/logoflor.png">
+            <button class="remover">×</button>
+          </section>
+
+          <section class="item">
+            <img src="imagens/Muda.png">
+            <button class="remover">×</button>
+          </section>
+
+          <section class="item">
+            <img src="imagens/logoflor.png">
+            <button class="remover">x</button>
+          </section>
+        </section>
+        <section class="resumo">
+          <hr class="borda">
+          <p>Total: R$ 2815,10</p>
+          <button onclick="location.href='/pagamento'">Pagar</button>
+        </section>
+      </main>
+
+      <%- include("../partials/footer") %>
+</body>
+
+</html>

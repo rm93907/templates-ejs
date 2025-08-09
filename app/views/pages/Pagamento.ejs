@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="css/pagamento.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="top-bar">
+    <section class="logo">
+      <a href="/"> <img src="imagens/logoflor.png" /></a>
+    </section>
+    <section class="icones">
+      <a href="Login"><img src="imagens/perfil.png" class="perfil" /></a>
+      <a href="Carrinho"><img src="imagens/carrinho.png" class="carrinho" /></a>
+    </section>
+  </header>
+
+  <main class="pagamento-container">
+    <h2>Escolha a forma de pagamento</h2>
+    <section class="metodos">
+      <section class="metodo">
+        <img src="imagens/Muda.png">
+        <span>Crédito</span>
+      </section>
+      <section class="metodo">
+        <img src="imagens/Muda.png">
+        <span>Débito</span>
+      </section>
+      <section class="metodo">
+        <img src="imagens/Muda.png">
+        <span>Pix</span>
+      </section>
+      <section class="metodo">
+        <img src="imagens/Muda.png">
+        <span>PayPal</span>
+      </section>
+      <section class="metodo">
+        <img src="imagens/Muda.png">
+        <span>Boleto</span>
+      </section>
+      <section class="metodo">
+        <img src="imagens/Muda.png">
+        <span>Outro</span>
+      </section>
+    </section>
+    <button onclick="location.href='/'">Confirmar pagamento</button>
+  </main>
+
+  <%- include("../partials/footer") %>
+</body>
+
+</html>

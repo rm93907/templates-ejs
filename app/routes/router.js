@@ -20,7 +20,25 @@ router.get("/promocoes", function (req, res) {
 router.get("/presentear", function (req, res) {
     res.render("pages/Presentear")
 });
+router.get("/presentear", function (req, res) {
+    res.render("pages/Presentear")
+});
 
+router.get("/detalhes", function (req, res) {
+    res.render("pages/Detalhes")
+});
+
+router.get("/login", function (req, res) {
+    res.render("pages/Login")
+});
+
+router.get("/carrinho", function (req, res) {
+    res.render("pages/Carrinho")
+});
+
+router.get("/pagamento", function (req, res) {
+    res.render("pages/Pagamento")
+});
 
 
 module.exports = router;

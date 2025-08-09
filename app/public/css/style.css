@@ -15,6 +15,9 @@
 li{
   list-style-type: none;
 }
+ul{
+  list-style-type: none;
+}
 
   * {
     margin: 0;
@@ -42,10 +45,10 @@ li{
   background-color: #fff;
   width: 100%;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0px;
   }
   
-  section ul {
+  section ul.menuv {
     list-style: none;
     height: 48px;
     padding: 10px;
@@ -129,21 +132,27 @@ li{
   height: 100vh;
 }
 
-.cards-container {
+.cards-container, ul.c1, ul.c2  {
   display: flex;
   gap: 30px; 
   flex-wrap: wrap; 
   justify-content: center;
 }
 
-.card {
+.cards-container2, ul.c3, ul.c4{
+  display: flex;
+  gap: 30px; 
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6{
   background-color: white;
   width: 180px;
   height: 260px;
   border-radius: 12px;
   box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
-
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -152,15 +161,37 @@ li{
   padding: 10px;
 }
 
-.card img {
+.card7, .card8, .card9, .card10, .card11, .card12 {
+  background-color: white;
+  width: 180px;
+  height: 260px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img {
   width: 100px;
   height: auto;
   object-fit: contain;
 }
 
-li{
+.card7 img, .card8 img, .card9 img, .card10 img, .card11 img, .card12 img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+section.cards-container, section.cards-container2{
 position: inline-block;
 }
+
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -173,7 +204,7 @@ position: inline-block;
 }
 
 .logo img {
-  height: 80px;
+  height: 70px;
 }
 
 .busca {
@@ -184,21 +215,42 @@ position: inline-block;
 
 .barra {
   width: 100%;
-  max-width: 500px;
-  padding: 8px 16px;
+  height: 35px;
+  max-width: 600px;
+  padding: 8px 16px 8px 16px;
   border-radius: 20px;
   border: none;
   background-color: #000;
   color: white;
+  margin-left: 130px;
+  margin-top: 7px;
 }
 
 .icones {
+  margin-right: 20px;
   display: flex;
-  gap:50px;
+  gap: 60px;
   align-items: center;
 }
 
 .icones img {
-  height: 80px;
+  height: 70px;
   cursor: pointer;
+}
+
+ul.c1{
+  margin-top: 85px;
+  margin-right: 200px;
+}
+ul.c2{
+  margin-top: 85px;
+  margin-right: 0px;
+}
+ul.c4{
+  margin-top: 30px;
+  margin-right: 0px;
+}
+ul.c3{
+  margin-top: 30px;
+  margin-right: 200px;
 }
