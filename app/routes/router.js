@@ -5,7 +5,7 @@ var router = express.Router();
 router.get("/", function (req, res) {
     res.render("pages/Home")
 });
-router.get("/MVendidos", function (req, res) {
+router.get("/maisvendidos", function (req, res) {
     res.render("pages/MaisVendidos")
 });
 router.get("/plantas", function (req, res) {
@@ -20,12 +20,13 @@ router.get("/promocoes", function (req, res) {
 router.get("/presentear", function (req, res) {
     res.render("pages/Presentear")
 });
-router.get("/presentear", function (req, res) {
-    res.render("pages/Presentear")
-});
 
 router.get("/detalhes", function (req, res) {
     res.render("pages/Detalhes")
+});
+
+router.get("/detalhesv", function (req, res) {
+    res.render("pages/DetalhesV")
 });
 
 router.get("/login", function (req, res) {

@@ -18,7 +18,7 @@
 }
 
 .busca {
-  max-width: 400px;
+  max-width: 1000px;
   width: 100%;
   padding: 8px;
   border-radius: 20px;
@@ -36,14 +36,16 @@
 .form-container {
   display: flex;
   justify-content: center;
-  padding: 60px 20px;
+    padding: 25px;
 }
 
 .formulario {
+  text-align: center;
+  border: #000;
   background: transparent;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 36px;
   width: 100%;
   max-width: 400px;
 }
@@ -51,6 +53,7 @@
 .formulario label {
   font-size: 1rem;
   color: #000;
+  border: #000;
 }
 
 .formulario input {
@@ -59,6 +62,7 @@
   border: none;
   background: white;
   font-size: 1rem;
+  border: #000  ;
 }
 
 .formulario button {
@@ -69,6 +73,7 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  gap: 30px;  
 }
 
 .formulario .trocar {
@@ -81,4 +86,19 @@
 /* Esconde */
 .hidden {
   display: none;
+}
+
+.l1{
+  background-color: white;
+  width: 600px;
+  height: 700px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
 }
