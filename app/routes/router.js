@@ -41,5 +41,47 @@ router.get("/pagamento", function (req, res) {
     res.render("pages/Pagamento")
 });
 
+router.get("/orquidea", function (req, res) {
+    res.render("pages/orquidea")
+});
 
+router.get("/alecrim", function (req, res) {
+    res.render("pages/alecrim")
+});
+
+router.get("/babosa", function (req, res) {
+    res.render("pages/babosa")
+});
+
+router.get("/cacto", function (req, res) {
+    res.render("pages/cacto")
+});
+
+router.get("/costeladeadao", function (req, res) {
+    res.render("pages/costeladeadao")
+});
+
+router.get("/espadadesaojorge", function (req, res) {
+    res.render("pages/espadadesaojorge")
+});
+
+router.get("/hortela", function (req, res) {
+    res.render("pages/hortela")
+});
+
+router.get("/jasmim", function (req, res) {
+    res.render("pages/jasmim")
+});
+
+router.get("/lavanda", function (req, res) {
+    res.render("pages/lavanda")
+});
+
+router.get("/manjericao", function (req, res) {
+    res.render("pages/manjericao")
+});
+
+router.get("/samambaia", function (req, res) {
+    res.render("pages/samambaia")
+});
 module.exports = router;

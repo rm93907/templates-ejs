@@ -214,3 +214,11 @@ p.t{
     text-align: center;
     font-size: 36px;
 }
+
+a{
+  color: #000;
+}
+
+a:hover{
+  color: #000;
+}
