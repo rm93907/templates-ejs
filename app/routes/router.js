@@ -9,7 +9,7 @@ router.get("/maisvendidos", function (req, res) {
     res.render("pages/MaisVendidos")
 });
 router.get("/plantas", function (req, res) {
-    res.render("pages/Plantas")
+    res.render("pages/plantas")
 });
 router.get("/vasos", function (req, res) {
     res.render("pages/Vasos")
