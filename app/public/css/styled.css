@@ -19,7 +19,9 @@
   gap: 40px;
   padding: 45px;
   flex-wrap: wrap;
+  justify-content: center; 
 }
+
 
 .galeria {
   display: flex;
