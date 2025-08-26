@@ -226,7 +226,7 @@ section.cards-container2 {
 
 ul.c1 {
   margin-top: 85px;
-  margin-right: 200px;
+  margin-right: 0px;
 }
 
 ul.c2 {
@@ -241,11 +241,11 @@ ul.c4 {
 
 ul.c3 {
   margin-top: 30px;
-  margin-right: 200px;
+  margin-right: 0px;
 }
 
 hr {
-  margin: 0px 100px 0px 100px;
+  margin: 50px 100px 0px 100px;
 }
 
 p.t {
@@ -253,8 +253,15 @@ p.t {
   font-size: 36px;
 }
 
+
+h2.t {
+  text-align: center;
+  font-size: 36px;
+ 
+}
+
 a:hover {
-  transform: scale(1.2);
+  transform: scale(1.055);
 }
 
 a {
