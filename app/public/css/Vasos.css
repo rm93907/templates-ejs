@@ -1,16 +1,26 @@
 :root {
-  --cor-fundo-pagina: #f8f9fa; /* Cor de fundo suave (cinza claro) */
-  --cor-header:#white; 
-  --cor-footer: #505050; /* Azul padrão (cor primária do Bootstrap) */
-  --cor-navegacao: #000; /* Cinza suave para a navegação */
-  --cor-botoes: #0005; /* Verde de sucesso */
-  --cor-botoes-hover: #8b712b; /* Verde mais escuro para hover */
-  --cor-titulo: #cfa93f; /* Cor escura para os títulos */
-  --cor-texto: #cfa93f; /* Cor do texto principal */
-  --cor-texto-secundario: #6c757d; /* Cor suave para texto secundário */
+  --cor-fundo-pagina: #f2e4d5;
+  /* Cor de fundo suave (cinza claro) */
+  --cor-header: #f2dfd3;
+  --cor-footer: #505050;
+  /* Azul padrão (cor primária do Bootstrap) */
+  --cor-navegacao: #3e2c1c;
+  /* Cinza suave para a navegação */
+  --cor-botoes: #3e2c1c;
+  /* Verde de sucesso */
+  --cor-botoes-hover: #394e3b;
+  /* Verde mais escuro para hover */
+  --cor-titulo: #050505;
+  /* Cor escura para os títulos */
+  --cor-h1: #000;
+  --cor-h2: #cfa93f;
+  --cor-texto: #4f6f52;
+  /* Cor do texto principal */
+  --cor-texto-secundario: #6c757d;
+  /* Cor suave para texto secundário */
   --cor-hr: #8f8329;
 
-  }
+}
   
 li{
   list-style-type: none;
@@ -31,40 +41,41 @@ ul{
     line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: #fff;
-  
+  background:#f2e4d5;
     display: flex;
     flex-direction: column;
     height: 100vh;
   }
   
-  header {
+  header.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #fff;
+  color: #cfa93f;
+  background-color: #5a4029;
   width: 100%;
   flex-wrap: wrap;
   gap: 0px;
-  }
+}
+
   
-  section ul.menuv {
-    list-style: none;
-    height: 48px;
-    padding: 10px;
-    text-align: center;
-    background-color: var(--cor-navegacao);
-    margin: 0;
-  }
+ section ul.menuv {
+  list-style: none;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--cor-navegacao);
+  margin: 0;
+}
   
   section ul li {
-    display: inline;
-    margin-right: 15px;
-  }
+  display: inline;
+  margin-right: 150px;
+}
   
   section ul li a {
-    color: #cfa93f;
+    color: #4f6f52;
     text-decoration: none;
     padding: 10px 20px;
     background-color: var(--cor-botoes);
@@ -217,17 +228,24 @@ hr {
 p.t {
   text-align: center;
   font-size: 36px;
+  color: #000000
 }
 
 
 h2.t {
   text-align: center;
   font-size: 36px;
- 
 }
 a:hover {
   transform: scale(1.2);
 }
 a{
   color: #000;
+}
+
+h1{
+  color:var(--cor-h1);
+}
+h2{
+  color: var(--cor-h2);
 }
