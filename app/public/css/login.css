@@ -4,7 +4,12 @@
   --preto: #000;
   --cinza: #505050;
 }
-
+body {
+  background-image: url('/imagens/Fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* Formulário */
 .form-container {
   text-align: center;
