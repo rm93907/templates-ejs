@@ -1,6 +1,6 @@
     footer{
     position: end;
-    background-color: var(--cor-footer);
+    background-color: #205E47;
     color: white;
     text-align: center;
     padding: 4px;
@@ -32,9 +32,6 @@
   li img {
     margin: 3px;
     height: 25px;
-  }
-  hr{
-    border-color: var(--cor-hr);
   }
 
   ul img{

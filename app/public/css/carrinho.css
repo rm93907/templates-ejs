@@ -1,3 +1,4 @@
+
 .carrinho {
   display: flex;
   justify-content: space-between;
@@ -5,14 +6,20 @@
   padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
-.carrinho-esquerda {
-  flex: 2;
+.carrinho-esquerda,
+.carrinho-direita {
   background: #fff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.carrinho-esquerda {
+  flex: 2;
+  min-width: 300px;
 }
 
 .produto {
@@ -21,6 +28,7 @@
   padding: 15px 0;
   border-bottom: 1px solid #ddd;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .produto img {
@@ -33,6 +41,7 @@
 
 .info {
   flex: 1;
+  min-width: 200px;
 }
 
 .preco {
@@ -48,6 +57,10 @@
   cursor: pointer;
 }
 
+.remover:hover {
+  text-decoration: underline;
+}
+
 .quantidade {
   display: flex;
   align-items: center;
@@ -58,19 +71,23 @@
 .quantidade button {
   background: #eee;
   border: none;
-  padding: 4px 8px;
+  padding: 4px 10px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s ease;
 }
 
+.quantidade button:hover {
+  background: #ddd;
+}
+
+/*Resumo da compra */
 .carrinho-direita {
   flex: 1;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   height: fit-content;
+  min-width: 260px;
 }
 
 .carrinho-direita h2 {
@@ -98,8 +115,60 @@
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .finalizar:hover {
   background: #234026;
+}
+
+/*Responsividade*/
+@media (max-width: 992px) {
+  .carrinho {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .carrinho-esquerda,
+  .carrinho-direita {
+    width: 100%;
+  }
+
+  .produto {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .carrinho-direita {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carrinho {
+    padding: 15px;
+  }
+
+  .produto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .produto img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .info {
+    min-width: unset;
+  }
+
+  .quantidade {
+    justify-content: center;
+  }
+
+  .finalizar {
+    font-size: 0.95rem;
+  }
 }

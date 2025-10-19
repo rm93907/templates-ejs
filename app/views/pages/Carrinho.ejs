@@ -6,60 +6,55 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Carrinho</title>
   <link rel="stylesheet" href="css/carrinho.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <%- include("../partials/nav") %>
-    <%- include("../partials/header") %>
+  <%- include("../partials/header") %>
 
-      <main class="carrinho">
-  <section class="carrinho-esquerda">
-    <h2>Produtos</h2>
+  <main class="carrinho">
+    <section class="carrinho-esquerda" aria-labelledby="titulo-produtos">
+      <h2 id="titulo-produtos">Produtos</h2>
 
-    <section class="produto">
-      <img src="imagens/VasoAutoirrigavel.png" alt="Vaso Autoirrigável">
-      <section class="info">
-        <h3>Vaso Autoirrigável</h3>
-        <p class="preco">R$ 150,00</p>
-        <button class="remover">Excluir</button>
-        <section class="quantidade">
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
+      <article class="produto">
+        <img src="imagens/VasoAutoirrigavel.png" alt="Vaso Autoirrigável">
+        <section class="info">
+          <h3>Vaso Autoirrigável</h3>
+          <p class="preco">R$ 150,00</p>
+          <button class="remover">Excluir</button>
+          <section class="quantidade" aria-label="Quantidade">
+            <button aria-label="Diminuir quantidade">-</button>
+            <span>1</span>
+            <button aria-label="Aumentar quantidade">+</button>
+          </section>
         </section>
-      </section>
+      </article>
+
+      <article class="produto">
+        <img src="imagens/OrquideaPhalaenopsis.png" alt="Orquídea Phalaenopsis">
+        <section class="info">
+          <h3>Orquídea Phalaenopsis</h3>
+          <p class="preco">R$ 220,00</p>
+          <button class="remover">Excluir</button>
+          <section class="quantidade" aria-label="Quantidade">
+            <button aria-label="Diminuir quantidade">-</button>
+            <span>2</span>
+            <button aria-label="Aumentar quantidade">+</button>
+          </section>
+        </section>
+      </article>
     </section>
 
-    <section class="produto">
-      <img src="imagens/OrquideaPhalaenopsis.png" alt="Orquídea">
-      <section class="info">
-        <h3>Orquídea Phalaenopsis</h3>
-        <p class="preco">R$ 220,00</p>
-        <button class="remover">Excluir</button>
-        <section class="quantidade">
-          <button>-</button>
-          <span>2</span>
-          <button>+</button>
-        </section>
-      </section>
-    </section>
+    <aside class="carrinho-direita" aria-labelledby="titulo-resumo">
+      <h2 id="titulo-resumo">Resumo da compra</h2>
+      <p>Produtos: <span>R$ 590</span></p>
+      <p>Frete: <span>A calcular</span></p>
+      <p class="total">Total: <span>R$ 590</span></p>
+      <a href="/"><button class="finalizar">Finalizar Compra</button></a>
+    </aside>
+  </main>
 
-    <!-- Repetir outros produtos -->
-  </section>
-
-  <aside class="carrinho-direita">
-    <h2>Resumo da compra</h2>
-    <p>Produtos: <span>R$590</span></p>
-    <p>Frete: <span>A calcular</span></p>
-    <hr>
-    <p class="total">Total: <span>R$ 590</span></p>
-   <a href="/"><button class="finalizar">Finalizar Compra</button></a> 
-  </aside>
-</main>
-
-
-      <%- include("../partials/footer") %>
+  <%- include("../partials/footer") %>
 </body>
 
 </html>
