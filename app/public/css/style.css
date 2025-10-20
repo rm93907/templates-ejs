@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
   --cor-fundo-pagina: #f8f9fa; /* Cor de fundo suave (cinza claro) */
   --cor-header:#white; 
   --cor-footer: #505050; /* Azul padrão (cor primária do Bootstrap) */
@@ -16,20 +17,25 @@ li{
 }
 ul{
   list-style-type: none;
+=======
+  --cor-fundo-pagina: #EDEDED;
+  --cor-header: #038554;
+  --cor-footer: #505050;
+  --cor-navegacao: #161A19;
+  --cor-botoes: #161A19;
+  --cor-botoes-hover: #394e3b;
+  --cor-titulo: #050505;
+  --cor-h1: #000;
+  --cor-h2: #cfa93f;
+  --cor-texto: #6f644f;
+  --cor-texto-secundario: #6c757d;
+>>>>>>> ad062fc420a2538becebdb6621e3e0ac3679f4a2
 }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   background: #fff;
   
     display: flex;
@@ -81,127 +87,170 @@ ul{
   justify-content: center;
   align-items: center;
   height: 100vh;
+=======
+  box-sizing: border-box;
+>>>>>>> ad062fc420a2538becebdb6621e3e0ac3679f4a2
 }
 
-.cards-container, ul.c1, ul.c2  {
+body {
+  font-family: Arial, sans-serif;
+  background: var(--cor-fundo-pagina);
+  color: #000;
   display: flex;
-  gap: 30px; 
-  flex-wrap: wrap; 
-  justify-content: center;
-}
-
-.cards-container2, ul.c3, ul.c4{
-  display: flex;
-  gap: 30px; 
-  flex-wrap: wrap; 
-  justify-content: center;
-}
-
-.card1, .card2, .card3, .card4, .card5, .card6{
-  background-color: white;
-  width: 180px;
-  height: 260px;
-  border-radius: 12px;
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
-  display: inline-block;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 10px;
-  padding: 10px;
+  min-height: 100vh;
 }
 
-.card7, .card8, .card9, .card10, .card11, .card12 {
-  background-color: white;
-  width: 180px;
-  height: 260px;
+/* CARDS UNIVERSAIS (Home + MV) */
+.cards-container,
+.cards-container2 {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding: 15px;
+  background-color: #f9f9f9;
   border-radius: 12px;
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+
+.cards-container::-webkit-scrollbar,
+.cards-container2::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards-container::-webkit-scrollbar-thumb,
+.cards-container2::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.card {
+  flex: 0 0 75%;
+  max-width: 260px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   text-align: center;
-  gap: 10px;
-  padding: 10px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
 }
 
-.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.card7 img, .card8 img, .card9 img, .card10 img, .card11 img, .card12 img {
-  width: 100px;
-  height: auto;
-  object-fit: contain;
-}
-
-section.cards-container, section.cards-container2{
-position: inline-block;
-}
-
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
+.card img {
   width: 100%;
-  flex-wrap: wrap;
-  gap: 10px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
-.logo img {
-  height: 70px;
+.card h1 {
+  font-size: 14px;
+  color: #333;
+  margin: 8px 0 0;
+  padding: 0 8px;
+  min-height: 40px;
 }
 
-.busca {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+.card h2 {
+  font-size: 13px;
+  color: #205E47;
+  font-weight: bold;
+  margin: 4px 0 10px;
 }
 
-.barra {
-  width: 100%;
-  height: 35px;
-  max-width: 600px;
-  padding: 8px 16px 8px 16px;
-  border-radius: 20px;
-  border: none;
-  background-color: #000;
-  color: white;
-  margin-left: 130px;
-  margin-top: 7px;
+/* SEÇÕES */
+.divisoriaplantas,
+.divisoriavasos {
+  padding: 20px;
 }
 
-.icones {
-  margin-right: 20px;
-  display: flex;
-  gap: 60px;
-  align-items: center;
+.divisoriaplantas h2,
+.divisoriavasos h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000;
 }
 
-.icones img {
-  height: 70px;
-  cursor: pointer;
+/* --- A PARTIR DE TABLETS (>=481px) --- */
+@media (min-width: 481px) {
+  .card {
+    flex: 0 0 160px;
+  }
+
+  .card img {
+    height: 130px;
+  }
+
+  .divisoriaplantas h2,
+  .divisoriavasos h2 {
+    font-size: 24px;
+  }
 }
 
-ul.c1{
-  margin-top: 85px;
-  margin-right: 200px;
+/* --- A PARTIR DE MÉDIOS (>=769px) --- */
+@media (min-width: 769px) {
+  .cards-container,
+  .cards-container2 {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .card {
+    flex: 0 0 160px;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  .card h1 {
+    font-size: 14px;
+  }
+
+  .card h2 {
+    font-size: 13px;
+  }
+
+  .divisoriaplantas h2,
+  .divisoriavasos h2 {
+    font-size: 28px;
+  }
 }
-ul.c2{
-  margin-top: 85px;
-  margin-right: 0px;
-}
-ul.c4{
-  margin-top: 30px;
-  margin-right: 0px;
-}
-ul.c3{
-  margin-top: 30px;
-  margin-right: 200px;
+
+/* --- A PARTIR DE DESKTOPS (>=1025px) --- */
+@media (min-width: 1025px) {
+  .cards-container,
+  .cards-container2 {
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .card {
+    flex: 0 0 180px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .card h1 {
+    font-size: 16px;
+  }
+
+  .card h2 {
+    font-size: 15px;
+  }
+
+  .divisoriaplantas h2,
+  .divisoriavasos h2 {
+    font-size: 32px;
+  }
 }

@@ -18,7 +18,7 @@ router.get("/maisvendidos", function (req, res) {
     res.render("pages/MaisVendidos")
 });
 router.get("/plantas", function (req, res) {
-    res.render("pages/Plantas")
+    res.render("pages/plantas")
 });
 router.get("/vasos", function (req, res) {
     res.render("pages/Vasos")
@@ -38,9 +38,6 @@ router.get("/detalhesv", function (req, res) {
     res.render("pages/DetalhesV")
 });
 
-router.get("/login", function (req, res) {
-    res.render("pages/Login")
-});
 
 router.get("/carrinho", function (req, res) {
     res.render("pages/Carrinho")
@@ -92,5 +89,8 @@ router.get("/manjericao", function (req, res) {
 
 router.get("/samambaia", function (req, res) {
     res.render("pages/samambaia")
+});
+router.get("/login2", function (req, res) {
+    res.render("pages/login2")
 });
 module.exports = router;

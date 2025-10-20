@@ -12,14 +12,16 @@
   cursor: pointer;
 }
 
-/* Detalhes do Produto  */
+/*Detalhes do Produto*/
 
 .container-detalhes {
   display: flex;
   gap: 40px;
   padding: 45px;
   flex-wrap: wrap;
+  justify-content: center;
 }
+
 
 .galeria {
   display: flex;
@@ -113,7 +115,7 @@
   cursor: pointer;
 }
 
-/*  Descrição  */
+/*Descrição*/
 
 .descricao {
   padding: 20px 40px;
@@ -125,7 +127,7 @@
   color: var(--verde);
 }
 
-/*  Comentários  */
+/*Comentários*/
 
 .comentarios {
   padding: 20px 40px;
