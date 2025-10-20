@@ -29,9 +29,6 @@ router.get("/detalhesv", function (req, res) {
     res.render("pages/DetalhesV")
 });
 
-router.get("/login", function (req, res) {
-    res.render("pages/Login")
-});
 
 router.get("/carrinho", function (req, res) {
     res.render("pages/Carrinho")
@@ -83,5 +80,8 @@ router.get("/manjericao", function (req, res) {
 
 router.get("/samambaia", function (req, res) {
     res.render("pages/samambaia")
+});
+router.get("/login2", function (req, res) {
+    res.render("pages/login2")
 });
 module.exports = router;
