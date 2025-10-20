@@ -5,6 +5,15 @@ var router = express.Router();
 router.get("/", function (req, res) {
     res.render("pages/Home")
 });
+router.get("/pedidos", function (req, res) {
+    res.render("pages/Pedidos")
+});
+router.get("/admin", function (req, res) {
+    res.render("pages/index-adm")
+});
+router.get("/estoque", function (req, res) {
+    res.render("pages/estoque")
+});
 router.get("/maisvendidos", function (req, res) {
     res.render("pages/MaisVendidos")
 });

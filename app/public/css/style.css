@@ -3,7 +3,6 @@
   --cor-header:#white; 
   --cor-footer: #505050; /* Azul padrão (cor primária do Bootstrap) */
   --cor-navegacao: #000; /* Cinza suave para a navegação */
-  --cor-botoes: #0005; /* Verde de sucesso */
   --cor-botoes-hover: #8b712b; /* Verde mais escuro para hover */
   --cor-titulo: #cfa93f; /* Cor escura para os títulos */
   --cor-texto: #cfa93f; /* Cor do texto principal */
@@ -67,7 +66,7 @@ ul{
     color: #cfa93f;
     text-decoration: none;
     padding: 10px 20px;
-    background-color: var(--cor-botoes);
+    background-color: var(#0005);
     border-radius: 5px;
     transition: background-color 0.3s;
   }
