@@ -26,7 +26,7 @@ text-decoration: none;}
     background-color: #fff;
     border-radius: 15px;
     width: 960px;
-    height: 50%;
+    height: 55%;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -120,7 +120,7 @@ text-decoration: none;}
 
 .first-column {
     text-align: center;
-    width: 40%;
+    width: 50%;
     z-index: 10;
 }
 
@@ -579,7 +579,7 @@ input:-webkit-autofill {
 }
 
 .mensagem.erro {
-  color: #dc2626;
+  color: #720000;
 }
 
 .mensagem.sucesso {
