@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,58 +7,52 @@
   <link rel="stylesheet" href="css/login.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <%- include("../partials/nav") %>
-    <%- include("../partials/header") %>
-      <main class="form-container">
+     <%- include("../partials/nav") %>
+  <%- include("../partials/header") %>
+  <main class="form-container">
+    
+    <!-- Formulário de Login -->
+    <form class="formulario" id="login-form">
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" placeholder="Digite seu email" required />
 
-        <section class="l1">
+      <label for="login-senha">Senha</label>
+      <input type="password" id="login-senha" placeholder="Digite sua senha" required />
 
+      <button type="submit">Entrar</button>
 
-          <!-- Formulário de Login -->
-          <form class="formulario" id="login-form">
-            <label for="login-email">Email</label>
-            <input type="email" id="login-email" placeholder="Digite seu email" required />
+      <a href="#" class="trocar" onclick="mostrarCadastro()">Crie sua conta</a>
+    </form>
 
-            <label for="login-senha">Senha</label>
-            <input type="password" id="login-senha" placeholder="Digite sua senha" required />
+    <!-- Formulário de Cadastro -->
+    <form class="formulario hidden" id="cadastro-form">
+      <label for="cadastro-email">Email</label>
+      <input type="email" id="cadastro-email" placeholder="Digite seu email" required />
 
-            <button type="submit">Entrar</button>
+      <label for="cadastro-senha">Senha</label>
+      <input type="password" id="cadastro-senha" placeholder="Crie uma senha" required />
 
-            <a href="#" class="trocar" onclick="mostrarCadastro()">Crie sua conta</a>
-          </form>
+      <label for="cadastro-confirmar">Confirme a senha</label>
+      <input type="password" id="cadastro-confirmar" placeholder="Repita a senha" required />
 
-          <!-- Formulário de Cadastro -->
-          <form class="formulario hidden" id="cadastro-form">
-            <label for="cadastro-email">Email</label>
-            <input type="email" id="cadastro-email" placeholder="Digite seu email" required />
+      <button type="submit">Entrar</button>
 
-            <label for="cadastro-senha">Senha</label>
-            <input type="password" id="cadastro-senha" placeholder="Crie uma senha" required />
+      <a href="#" class="trocar" onclick="mostrarLogin()">Já tenho uma conta</a>
+    </form>
+  </main>
+<%- include("../partials/footer") %>
 
-            <label for="cadastro-confirmar">Confirme a senha</label>
-            <input type="password" id="cadastro-confirmar" placeholder="Repita a senha" required />
+  <script>
+    function mostrarCadastro() {
+      document.getElementById('login-form').classList.add('hidden');
+      document.getElementById('cadastro-form').classList.remove('hidden');
+    }
 
-            <button type="submit">Entrar</button>
-
-            <a href="#" class="trocar" onclick="mostrarLogin()">Já tenho uma conta</a>
-          </form>
-        </section>
-      </main>
-      <%- include("../partials/footer") %>
-
-        <script>
-          function mostrarCadastro() {
-            document.getElementById('login-form').classList.add('hidden');
-            document.getElementById('cadastro-form').classList.remove('hidden');
-          }
-
-          function mostrarLogin() {
-            document.getElementById('cadastro-form').classList.add('hidden');
-            document.getElementById('login-form').classList.remove('hidden');
-          }
-        </script>
+    function mostrarLogin() {
+      document.getElementById('cadastro-form').classList.add('hidden');
+      document.getElementById('login-form').classList.remove('hidden');
+    }
+  </script>
 </body>
-
 </html>

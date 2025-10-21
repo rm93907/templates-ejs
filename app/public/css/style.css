@@ -1,23 +1,4 @@
 :root {
-<<<<<<< HEAD
-  --cor-fundo-pagina: #f8f9fa; /* Cor de fundo suave (cinza claro) */
-  --cor-header:#white; 
-  --cor-footer: #505050; /* Azul padrão (cor primária do Bootstrap) */
-  --cor-navegacao: #000; /* Cinza suave para a navegação */
-  --cor-botoes-hover: #8b712b; /* Verde mais escuro para hover */
-  --cor-titulo: #cfa93f; /* Cor escura para os títulos */
-  --cor-texto: #cfa93f; /* Cor do texto principal */
-  --cor-texto-secundario: #6c757d; /* Cor suave para texto secundário */
-  --cor-hr: #8f8329;
-
-  }
-  
-li{
-  list-style-type: none;
-}
-ul{
-  list-style-type: none;
-=======
   --cor-fundo-pagina: #EDEDED;
   --cor-header: #038554;
   --cor-footer: #505050;
@@ -29,67 +10,12 @@ ul{
   --cor-h2: #cfa93f;
   --cor-texto: #6f644f;
   --cor-texto-secundario: #6c757d;
->>>>>>> ad062fc420a2538becebdb6621e3e0ac3679f4a2
 }
 
 * {
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-  background: #fff;
-  
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  width: 100%;
-  flex-wrap: wrap;
-  gap: 0px;
-  }
-  
-  section ul.menuv {
-    list-style: none;
-    height: 48px;
-    padding: 10px;
-    text-align: center;
-    background-color: var(--cor-navegacao);
-    margin: 0;
-  }
-  
-  section ul li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  section ul li a {
-    color: #cfa93f;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: var(#0005);
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  section ul li a:hover {
-    background-color: var(--cor-botoes-hover);
-  }
-  
-  
-.centralizar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-=======
   box-sizing: border-box;
->>>>>>> ad062fc420a2538becebdb6621e3e0ac3679f4a2
 }
 
 body {
@@ -101,7 +27,10 @@ body {
   min-height: 100vh;
 }
 
-/* CARDS UNIVERSAIS (Home + MV) */
+a{
+  color: #000;
+  text-decoration: none;
+}
 .cards-container,
 .cards-container2 {
   display: flex;
@@ -178,7 +107,68 @@ body {
   color: #000;
 }
 
-/* --- A PARTIR DE TABLETS (>=481px) --- */
+main {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.t {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.cards-section {
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 180px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 15px 15px 0 0;
+}
+
+figcaption {
+  padding: 10px;
+}
+
+figcaption h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+/* A PARTIR DE TABLETS (481px) */
 @media (min-width: 481px) {
   .card {
     flex: 0 0 160px;
@@ -194,7 +184,7 @@ body {
   }
 }
 
-/* --- A PARTIR DE MÉDIOS (>=769px) --- */
+/*A PARTIR DE MÉDIOS */
 @media (min-width: 769px) {
   .cards-container,
   .cards-container2 {
@@ -225,7 +215,7 @@ body {
   }
 }
 
-/* --- A PARTIR DE DESKTOPS (>=1025px) --- */
+/*A PARTIR DE DESKTOPS*/
 @media (min-width: 1025px) {
   .cards-container,
   .cards-container2 {
@@ -253,4 +243,7 @@ body {
   .divisoriavasos h2 {
     font-size: 32px;
   }
+}
+a{
+  color:black
 }
