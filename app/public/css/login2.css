@@ -567,3 +567,21 @@ input:-webkit-autofill {
         width: 100%;
     }
 }
+.hidden {
+  display: none;
+}
+
+.mensagem {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 10px;
+  min-height: 18px;
+}
+
+.mensagem.erro {
+  color: #dc2626;
+}
+
+.mensagem.sucesso {
+  color: #16a34a;
+}

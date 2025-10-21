@@ -4,6 +4,94 @@
   --preto: #000;
   --cinza: #505050;
 }
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  font-weight: 600;
+  color: #374151;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.trocar-texto {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.trocar {
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mensagem {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 10px;
+  min-height: 18px;
+}
+
+.mensagem.erro {
+  color: #dc2626;
+}
+
+.mensagem.sucesso {
+  color: #16a34a;
+}
 
 .top-bar {
   display: flex;

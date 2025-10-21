@@ -1,6 +1,85 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const { body, validationResult } = require("express-validator");
 
+const router = express.Router();
+
+/* ======== VALIDADORES ======== */
+
+// Validação de login
+const validateLogin = [
+  body("email")
+    .trim()
+    .notEmpty().withMessage("O e-mail é obrigatório.")
+    .isEmail().withMessage("Digite um e-mail válido."),
+  body("senha")
+    .notEmpty().withMessage("A senha é obrigatória.")
+    .isLength({ min: 6 }).withMessage("A senha deve ter pelo menos 6 caracteres."),
+];
+
+// Validação de cadastro
+const validateCadastro = [
+  body("email")
+    .trim()
+    .notEmpty().withMessage("O e-mail é obrigatório.")
+    .isEmail().withMessage("E-mail inválido."),
+  body("senha")
+    .notEmpty().withMessage("A senha é obrigatória.")
+    .isLength({ min: 8 }).withMessage("A senha deve ter pelo menos 8 caracteres.")
+    .matches(/\d/).withMessage("A senha deve conter ao menos um número.")
+    .matches(/[A-Z]/).withMessage("A senha deve conter ao menos uma letra maiúscula."),
+  body("confirmar")
+    .notEmpty().withMessage("É necessário confirmar a senha.")
+    .custom((value, { req }) => {
+      if (value !== req.body.senha) {
+        throw new Error("As senhas não conferem.");
+      }
+      return true;
+    }),
+];
+
+/* ======== ROTAS ======== */
+
+// Página de login/cadastro
+router.get("/login", (req, res) => {
+  res.render("auth/login");
+});
+
+// Login
+router.post("/login", validateLogin, (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).json({ errors: errors.array() });
+  }
+
+  const { email, senha } = req.body;
+
+  // Simulação de autenticação
+  if (email === "teste@florlo.com" && senha === "Senha123") {
+    return res.json({ message: "Login realizado com sucesso!" });
+  } else {
+    return res.status(401).json({ message: "E-mail ou senha incorretos." });
+  }
+});
+
+// Cadastro
+router.post("/cadastro", validateCadastro, (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(422).json({ errors: errors.array() });
+  }
+
+  const { email } = req.body;
+  // Aqui você salvaria o usuário no banco de dados
+  return res.json({ message: `Usuário ${email} cadastrado com sucesso!` });
+});
+
+/*
+
+
+
+
+
+*/ 
 
 router.get("/", function (req, res) {
     res.render("pages/Home")
