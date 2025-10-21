@@ -9,5 +9,5 @@ function changeSlide() {
   slides[currentIndex].classList.add('active');
 }
  
-// Trocar de imagem a cada 5 segundos
+
 setInterval(changeSlide, 5500);

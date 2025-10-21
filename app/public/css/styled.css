@@ -12,7 +12,6 @@
   cursor: pointer;
 }
 
-/*Detalhes do Produto*/
 
 .container-detalhes {
   display: flex;
@@ -115,7 +114,6 @@
   cursor: pointer;
 }
 
-/*Descrição*/
 
 .descricao {
   padding: 20px 40px;
@@ -127,7 +125,7 @@
   color: var(--verde);
 }
 
-/*Comentários*/
+
 
 .comentarios {
   padding: 20px 40px;
